@@ -17,7 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->increments('id');
             $table->tinyInteger('parent_id')->unsigned()->default(0);
             $table->string('name');
-            $table->string('patch');
+            $table->string('path');
             $table->string('description')->nullable();
             $table->string('image_url')->nullable();
             $table->timestamps();
